@@ -1,0 +1,29 @@
+:root{
+  --fonte: 'Montserrat', sans-serif;
+  --branco:#fff;
+  --cinza-escuro:#2a2a2a;
+  --cinza-ckaro:#7a7a7a;
+  --azul:#03a4ed;
+  --laranja:#ff695f;
+
+}
+body {
+  margin: 0;
+  font-family: var(--fonte);
+  background-color :var(--branco);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* #03a4ed; # Azul
+#2a2a2a; Cinza Escuro
+#7a7a7a; # Cinza claro
+#fff; # Branco
+#ff695f; Laranjo */ 
+
+/* font-family: 'Poppins', sans-serif; */
