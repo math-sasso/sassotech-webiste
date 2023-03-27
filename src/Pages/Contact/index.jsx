@@ -1,11 +1,6 @@
 import React, { useState } from 'react';
 import { Typography, Button, TextField, Grid } from '@mui/material';
-import styled from 'styled-components';
-
-const StyledSection = styled.section`
-  background-color: #fff;
-  padding: 5rem 0;
-`;
+import {StyledSection} from "./styles"
 
 const ContactUs = () => {
   const [name, setName] = useState('');

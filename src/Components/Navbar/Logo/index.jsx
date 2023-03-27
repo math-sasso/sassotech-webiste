@@ -1,25 +1,22 @@
 import React from 'react';
-import { Typography } from '@mui/material';
-import styled from 'styled-components';
-import { animateScroll as scroll } from 'react-scroll';
-const StyledLogo = styled(Typography)`
-  font-weight: 700;
-  font-size: 1.5rem;
-  color: #03a4ed;
-  cursor: pointer;
-`;
+
+import {StyledLogo,LogoContainer, LogoImg} from "./styles"
+import SassoTechLogo from "./sassotech_logo.png"
+import { useNavigate } from 'react-router-dom';
 
 const Logo = () => {
 
-    const handleScrollToTop = () => {
-        scroll.scrollToTop();
-        };
+    const navigate = useNavigate();
 
-  return (
-    <StyledLogo onClick={handleScrollToTop}>
-        SassoTech
-    </StyledLogo>
-  );
+    return (
+        <LogoContainer>
+            <StyledLogo onClick={() => navigate("/")}>
+                <LogoImg src={SassoTechLogo} alt="Logo" />
+            </StyledLogo>
+        </LogoContainer>
+    );
 };
 
 export default Logo;
+
+

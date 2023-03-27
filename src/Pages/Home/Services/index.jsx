@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Typography, Card, CardActionArea, CardActions, CardContent, CardMedia, Button, Grid } from '@mui/material';
-import styled from 'styled-components';
 import ChevronLeft from '@mui/icons-material/ChevronLeft';
 import ChevronRight from '@mui/icons-material/ChevronRight';
 
@@ -10,18 +9,7 @@ import serviceImage1 from './serviceImage1.jpeg';
 import serviceImage2 from './serviceImage2.jpeg';
 import serviceImage3 from './serviceImage3.jpeg';
 import styles from './styles.module.css'; // <-- Import the styles module
-import { useNavigate } from 'react-router-dom';
-
-
-
-const StyledSection = styled.section`
-  background-color: #fff;
-  padding: 5rem 0;
-`;
-
-const StyledTypography = styled(Typography)`
-  margin-bottom: 5rem;
-`;
+import {StyledSection, StyledTypography} from "./styles"
 
 const services = [
   {
